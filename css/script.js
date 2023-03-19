@@ -1,28 +1,7 @@
-//let turn="x";
-
-// let x ="x";
-// let y ="0";
-
-// if(x == "x"){
-//     document.write("x");
-// }else{
-//   document.write("0");
-// };
-
-
-
 let turn="x";
 let gameover = false;
 let isblank = false;
 
-// let x ="x";
-// let y ="0";
-
-// if(x == "x"){
-//     document.write("x");
-// }else{
-//   document.write("0");
-// };
 
 
 const changeTurn = ()=>{

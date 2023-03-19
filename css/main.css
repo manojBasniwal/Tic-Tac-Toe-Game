@@ -36,6 +36,8 @@ body{
     margin-top: 20px;
     color: deeppink;
 }
+
+
 .gameinfo .reset-btn{
     margin-top: 20px;
     color: blue;
@@ -50,7 +52,7 @@ body{
     border-radius: 5px;
 }
 @media screen and (min-width:768px){
-    .gameinfo .reset-btn{
+    .gameinfo button{
         font-size: 17px;
         width: 60px;
         height: 30px;
@@ -62,6 +64,23 @@ body{
     }
     .header{
         font-size: 27px;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+    .btn-container .gameinfo #info{
+        font-size: 20px;
+        margin-top: 35px;
+    }
+    .gameinfo button{
+        font-size: 14px;
+        width: 60px;
+        height: 30px;
+        margin-top: 35px;
     }
 }
 /* .box.x{

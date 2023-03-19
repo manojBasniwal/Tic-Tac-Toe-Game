@@ -82,6 +82,9 @@ body{
         height: 30px;
         /* margin-top: 40px; */
     }
+    .container .box .textbox{
+        font-size: 20vw;
+    }
 }
 /* .box.x{
     color: aqua;

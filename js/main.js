@@ -1,11 +1,11 @@
-let turn="x";
+let turn="X";
 let gameover = false;
 let isblank = false;
 
 
 
 const changeTurn = ()=>{
-    return turn === "x"? "0": "x"
+    return turn === "X"? "O": "X"
    }
 
 let boxes = document.getElementsByClassName("box");
@@ -15,10 +15,10 @@ let boxes = document.getElementsByClassName("box");
     element.addEventListener("click", ()=>{
               if (textbox.innerText === '' && !gameover){
                   textbox.innerText = turn;
-                  if(turn == "x"){
-                    textbox.style.color = "lawngreen"
+                  if(turn == "X"){
+                    textbox.style.color = "red"
                   }else{
-                  textbox.style.color = "eqva"
+                  textbox.style.color = "blue"
                   }
                   checkWin();
                   if (!gameover){
@@ -67,12 +67,12 @@ let boxes = document.getElementsByClassName("box");
   }
 
   function reset(){
-    let textboxs = document.querySelectorAll(".textbox");
-     for(let i=0; i<textboxs.length; i++){
-      let elements = textboxs[i];
+    let textbox = document.querySelectorAll(".textbox");
+     for(let i=0; i<textbox.length; i++){
+      let elements = textbox[i];
       elements.innerText = ""
     };
-    turn = "x";
+    turn = "X";
     gameover = false
-       document.getElementById("info").innerText = "Turn ="+" " +turn; 
+       document.getElementById("info").innerText = "Turn ="+" " +turn;
   }

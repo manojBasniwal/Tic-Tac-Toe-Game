@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="gamecontaniner">
-   <h3 class="header">Wellcome My Tic Tac Toe</h3>
+   <h3 class="header mt-4">Wellcome My Tic Tac Toe</h3>
     <div class="container">
         <div class="box"><span class="textbox"></span></div>
         <div class="box"><span class="textbox"></span></div>
@@ -22,13 +22,19 @@
         <div class="box"><span class="textbox"></span></div>
         <div class="box"><span class="textbox"></span></div>
     </div>
+    <div class="btn-container">
+        <div class="gameinfo">
+           <div id="info">Turn = x</div>
+           <button class="reset-btn" onclick="reset()">Reset</button>
+         </div>
+     </div>
 </div>
-<div class="btn-container">
+<!-- <div class="btn-container">
    <div class="gameinfo">
       <div id="info">Turn = x</div>
       <button class="reset-btn" onclick="reset()">Reset</button>
     </div>
-</div>
+</div> -->
 <script src="./js/main.js"></script>
 </body>
 </html>

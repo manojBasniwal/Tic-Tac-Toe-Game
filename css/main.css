@@ -8,16 +8,12 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-top: 30px; */
-    /* color: red; */
 }
 .container{
     display: grid;
     grid-template-columns: repeat(3, 10vw);
     grid-template-rows: repeat(3, 10vw);
     border: 1px solid blue;
-    /* color: aqua; */
-    /* background-color: fuchsia; */
 }
 .container .box{
     border: 1px solid blue;
@@ -31,7 +27,6 @@ body{
 }
 .container .box .textbox{
     font-size: 11vw;
-    /* font-family: 'Raleway', sans-serif; */
 }
 .btn-container{
     text-align: center;
@@ -45,6 +40,7 @@ body{
     color: blue;
     border: 1px solid blue;
     border-radius: 5px;
+    padding: 5px 10px;
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0 ,0.5);
 }
 .gameinfo button:hover{
@@ -53,11 +49,9 @@ body{
     border-color: red;
     border-radius: 5px;
 }
-@media screen and (max-width:768px){
+@media screen and (min-width:576px){
     .gameinfo button{
         font-size: 20px;
-        width: 60px;
-        height: 30px;
         margin-top: 35px;
     }
     .btn-container .gameinfo #info{
@@ -77,13 +71,9 @@ body{
     }
     .btn-container .gameinfo #info{
         font-size: 20px;
-        /* margin-top: 40px; */
     }
     .gameinfo button{
         font-size: 20px;
-        width: 60px;
-        height: 30px;
-        /* margin-top: 40px; */
     }
     .header{
         font-size: 23px;

@@ -2,8 +2,6 @@ let turn="X";
 let gameover = false;
 let isblank = false;
 
-
-
 const changeTurn = ()=>{
     return turn === "X"? "O": "X"
    }
@@ -24,6 +22,11 @@ let boxes = document.getElementsByClassName("box");
                   if (!gameover){
                      turn = changeTurn();
                     document.getElementById("info").innerText = "Turn ="+" " +turn;
+                    if(turn == "X"){
+                      info.style.color = "red"
+                    }else{
+                    info.style.color = "blue"
+                    }
                   }else {
                     document.getElementById("info").innerText = turn + " is Winner";
                   }
